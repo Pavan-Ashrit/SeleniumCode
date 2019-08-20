@@ -91,6 +91,10 @@ public class JavaScriptExecDemo {
 		String alerttext = alert.getText();
 		System.out.println(alerttext);
 		alert.accept();
+		
+		js.executeScript("prompt('Enter the credentials'),('Enter Yes/no')");
+		alert.sendKeys("yes");
+		alert.accept();
 	}
 	
 
